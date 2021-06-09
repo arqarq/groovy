@@ -13,9 +13,9 @@
     <build>
         <sourceDirectory>sources/java</sourceDirectory>
         <testSourceDirectory>tests/java</testSourceDirectory>
-        <directory>out</directory>
-        <outputDirectory>out/classes</outputDirectory>
-        <testOutputDirectory>out/testClasses</testOutputDirectory>
+        <directory>.out</directory>
+        <outputDirectory>.out/classes</outputDirectory>
+        <testOutputDirectory>.out/testClasses</testOutputDirectory>
         <resources>
             <resource>
                 <directory>sources/resources</directory>
