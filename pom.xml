@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>arqarq.groovy</groupId>
+    <artifactId>groovy-learn</artifactId>
+    <version>0.0.1</version>
+    <properties>
+        <maven.compiler.release>16</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <build>
+        <sourceDirectory>sources/java</sourceDirectory>
+        <testSourceDirectory>tests/java</testSourceDirectory>
+        <directory>out</directory>
+        <outputDirectory>out/classes</outputDirectory>
+        <testOutputDirectory>out/testClasses</testOutputDirectory>
+        <resources>
+            <resource>
+                <directory>sources/resources</directory>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>tests/resources</directory>
+            </testResource>
+        </testResources>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>3.0.8</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+</project>

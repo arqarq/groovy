@@ -1,2 +1,3 @@
-/groovy-learn.iml
-/.idea/
+*.iml
+.idea/
+out/
