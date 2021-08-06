@@ -1,7 +1,7 @@
 import swing.GenerateSwing;
 import swing.generate_swing;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
 class Runner {
     public static void main(String[] args) {

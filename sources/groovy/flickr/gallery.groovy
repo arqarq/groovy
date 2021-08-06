@@ -4,15 +4,17 @@ import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import groovy.swing.SwingBuilder
 
-import javax.swing.*
-import java.awt.*
+import javax.swing.ImageIcon
+import javax.swing.WindowConstants
+import java.awt.GridLayout
 
 final String key = new File('flickr_key.txt').text
 final String endPoint = 'https://api.flickr.com/services/rest?'
 paramsAndQsAndJson = [method: 'flickr.photos.search', api_key: key, format: 'json', tags: 'cat,dog', nojsoncallback: 1,
                       media : 'photos', per_page: 6]
 paramsAndQsAndJson = paramsAndQsAndJson.collect { k, v -> "$k=$v" }.join('&')
-paramsAndQsAndJson = "$endPoint$paramsAndQsAndJson".toURL().text
+println(paramsAndQsAndJson = "$endPoint$paramsAndQsAndJson")
+paramsAndQsAndJson = paramsAndQsAndJson.toURL().text
 
 final f = new File('catsAndDogs.json')
 deleteFileIfExists(f)
@@ -32,6 +34,7 @@ new SwingBuilder().edt {
         }
     }
     frame.setLocation(30, 30)
+    frame.setResizable(false) // no maximize option
     frame.setVisible(true) // no small, unprepared window
     frame.requestFocus() // blinking on taskbar
 }

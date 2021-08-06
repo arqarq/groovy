@@ -1,6 +1,6 @@
 package swing;
 
-import java.awt.*;
+import java.awt.Frame;
 
 public class GenerateSwing {
     public static void edt() {

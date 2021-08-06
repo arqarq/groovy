@@ -2,10 +2,10 @@ package swing
 
 import groovy.swing.SwingBuilder
 
-import javax.swing.*
+import javax.swing.JFrame
 import javax.swing.WindowConstants as WC
-import java.awt.*
 import java.awt.BorderLayout as BL
+import java.awt.Dimension
 
 private static void moveText(src, dest, enter = false) {
     dest.text = src.text + (enter ? " $enter" : '')
