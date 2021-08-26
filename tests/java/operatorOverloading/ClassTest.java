@@ -7,6 +7,6 @@ import static org.junit.Assert.assertEquals;
 public class ClassTest {
     @Test
     public void testLeftShift() {
-        assertEquals("c", Class.leftShift("c"));
+        assertEquals("cc", new Class('c').leftShift("c"));
     }
 }
