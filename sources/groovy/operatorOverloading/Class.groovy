@@ -8,8 +8,8 @@ class Class {
     }
 
     String leftShift(String input) {
-        this.temp += input
-        println this.temp
-        this.temp
+        temp += input
+        println temp
+        temp
     }
 }

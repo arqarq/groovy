@@ -12,4 +12,12 @@ class ClassTestGroovy extends GroovyTestCase {
     void testLeftShift() {
         assertEquals('cd..', c << '..')
     }
+
+    void testDoubleLeftShift() {
+        assertNotSame('cd..', c << '.' << '.')
+    }
+
+    void testDoubleLeftShiftWithTypeCorrection() {
+        assertEquals('cd..', c << '.' << '.' as String) // bo drugi '<<' to leftShift z typu StringBuffer
+    }
 }
