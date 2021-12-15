@@ -1,3 +1,5 @@
+package basics
+
 def map = [a: 1, b: 2, 'c': 3]
 map.put('d', 4)
 map['e'] = 1
@@ -32,5 +34,5 @@ println nums3.get(3).split()
 try {
     println nums3.get(1).split()
 } catch (NullPointerException e) {
-    'nie da siê'
+    'nie da siï¿½'
 }

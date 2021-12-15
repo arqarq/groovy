@@ -1,3 +1,5 @@
+package basics
+
 Range r = 1..10
 println r
 println r.getClass().getName()

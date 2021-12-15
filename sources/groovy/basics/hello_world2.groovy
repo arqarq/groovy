@@ -1,4 +1,6 @@
-int x = 1
+package basics
+
+x = 1
 println x.getClass().getSimpleName()
 x = 'abbc'
 println x.getClass().getSimpleName()

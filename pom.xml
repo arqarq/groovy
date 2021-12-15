@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>arqarq.groovy</groupId>
@@ -10,6 +10,14 @@
         <maven.compiler.release>15</maven.compiler.release><!--aktualnie max 15 dla 'groovy-eclipse-compiler'-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>3.0.9</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
     <build>
         <sourceDirectory>sources/java</sourceDirectory>
         <testSourceDirectory>tests/java</testSourceDirectory>
@@ -82,12 +90,4 @@
             </plugins>
         </pluginManagement>
     </build>
-    <dependencies>
-        <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>3.0.8</version>
-            <type>pom</type>
-        </dependency>
-    </dependencies>
 </project>

@@ -1,3 +1,5 @@
+package basics
+
 def s = 'https://oreilly.com'.toURL().getText()
 s = s.dropRight(s.size() - s.indexOf('</title>'))
 final def found = s.find(/<title[\s\S]*>/)

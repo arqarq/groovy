@@ -1,3 +1,5 @@
+package basics
+
 println 3.5.getClass().getName()
 println 2.0f - 1.1f
 println 2.0d - 1.1d

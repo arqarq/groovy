@@ -1,8 +1,10 @@
+package basics
+
 def x = 1
 println x.class.name
 x = 'abc'
 println x.class.name
-x = new Date();
+x = new Date()
 println x.class.name
 x = 1.0
 println x.class.name
@@ -48,15 +50,15 @@ println isPalindrome("Madam, in Eden, I'm Adam")
 import groovy.transform.*
 
 @Canonical
-class Person {
+class Person2 {
     String first
     String last
 }
 
-final def p1 = new Person('A', 'B')
+final def p1 = new Person2('A', 'B')
 println p1
-final def p2 = new Person('C', 'DD')
-final def p3 = new Person('E', 'FG')
+final def p2 = new Person2('C', 'DD')
+final def p3 = new Person2('E', 'FG')
 final List people = [p1, p2, p3]
 println people*.last
 println people.collect { "$it.first $it.last" }
