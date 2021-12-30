@@ -52,7 +52,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>add-test-source</id><!--drugi 'execution' musi już mieć 'id' inaczej będzie "duplicated"-->
+                        <id>add-test-source</id><!--drugi 'execution' musi już mieć 'id', inaczej będzie "duplicated"-->
                         <phase>generate-test-sources</phase>
                         <goals>
                             <goal>add-test-source</goal>
