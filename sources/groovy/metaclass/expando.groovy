@@ -6,8 +6,6 @@ e.name = 'Fido'
 e.speak = { it -> "$name says woof!" }
 println e.speak()
 
-Expando f = new Expando()
-
 class Dog {}
 
 Dog.getMetaClass().name = 'Phydeaux'
